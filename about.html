@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KT Group</title>
+	<style type="text/css">
+				@font-face{
+			font-family: 'Myweb';
+			src: url('absender1.ttf');
+			font-style: normal;
+			font-weight: 100;
+		}
+		@font-face{
+			font-family: 'Qanelas-Bold';
+			src: url('Qanelas-Bold.otf');
+			font-style: normal;
+		}
+		@font-face{
+			font-family: 'Qanelas-UltraLight';
+			src: url('Qanelas-UltraLight.otf');
+			font-style: normal;
+		}
+		@keyframes float {
+			0% {
+				box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+				transform: translatey(0px);
+			}
+			50% {
+				box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+				transform: translatey(-20px);
+			}
+			100% {
+				box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+				transform: translatey(0px);
+			}
+		}
+		body{
+			width: 1366px;
+			height: 480px;
+		}
+		@keyframes floating { 
+    		0% { transform: translate(0,  0px); } 
+    		50%  { transform: translate(0, 15px); } 
+    		100%   { transform: translate(0, -0px); }     
+		} 
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.logo img{
+			margin-top: 20px;
+			margin-left: 20px;
+			float: left;
+		}
+		.logo h3{
+			display: inline-block;
+			line-height: 80px;
+			margin-left: 30px;
+			text-transform: uppercase;
+			color: white;
+			font-family: Qanelas-UltraLight;
+		}
+		.header{
+			width: 100%;
+			height: 80px;
+			background-color: magenta;
+			position: relative;
+		}
+		nav{
+			float: right;
+			line-height: 80px;
+			margin-right: 80px;
+		}
+		nav a{
+			margin-left: 20px;
+			padding: 12px 25px;
+			text-decoration: none;
+			color: white;
+			font-family: Qanelas-Bold;
+			border: 2px solid white;
+			border-radius: 24px;
+			transition: 0.6s ease-in;
+			transition: 0.4s ease-out;
+		}
+		nav a:hover{
+			background-color: #000e2b;
+			transition: 0.6s ease-in 0.4s ease-out;
+		}
+		nav a.active{
+			background-color: #000e2b;
+		}
+		.content{
+			width: 100%;
+			height: 600px;
+			background-color: yellow;
+			position: relative;
+			display: flex;
+			justify-content: center;
+		}
+		.border-content{
+			width: 80%;
+			height: 550px;
+			background-color: gold;
+			position: relative;
+			margin-top: 25px;
+			display: flex;
+			justify-content: center;
+		}
+		.box1, .box2, .box3{
+			width: 250px;
+			height: 400px;
+			margin-top: 80px;
+			margin-left: 5px;
+			border: 3px solid black
+		}
+		.name-pdc1, .name-pdc2, .name-pdc3{
+			width: 250px;
+			height: 80px;
+			background-color: green;
+			border-bottom-left-radius: 25px;
+			border-bottom-right-radius: 25px;
+			text-align: center;
+			line-height: 80px;
+		}
+		.det1, .det2, .det3{
+			width: 250px;
+			height: 250px;
+			background-color: yellow;
+		}
+		.price1, .price2, .price3{
+			width: 250px;
+			height: 70px;
+			background-color: blue;
+			line-height: 70px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="box-area">
+		<div class="header">
+			<div class="logo">
+				<img src="img/97.jpg" alt="logo" width="60" height="40">
+				<h3>logo</h3>
+				<nav>
+					<a href="home.html">Home</a>
+					<a href="about.html" class="active">About</a>
+					<a href="#">Contact</a>
+					<a href="#">Pricing</a>
+				</nav>
+			</div>
+		</div>
+		<div class="content">
+			<div class="border-content">
+				<div class="box1">
+					<div class="name-pdc1">
+						<h2>freemium</h2>
+					</div>
+					<div class="det1">
+						<h3>3 project</h3>
+						<h3>7 hours per day</h3>
+						<h3>37 features</h3>
+						<h3>no backup plan</h3>
+					</div>
+					<div class="price1">
+						<h3>75000</h3>
+					</div>
+				</div>
+				<div class="box2">
+					<div class="name-pdc2">
+						<h2>premium</h2>
+					</div>
+					<div class="det2">
+						<h3>7 project</h3>
+						<h3>12 hours per day</h3>
+						<h3>53 features</h3>
+						<h3>backup plan</h3>
+					</div>
+					<div class="price2">
+						<h3>80000</h3>
+					</div>
+				</div>
+				<div class="box3">
+					<div class="name-pdc3">
+						<h2>pertamax</h2>
+					</div>
+					<div class="det3">
+						<h3>21 project</h3>
+						<h3>24 hours per day</h3>
+						<h3>147 features</h3>
+						<h3>backup plan + licensed</h3>
+					</div>
+					<div class="price3">
+						<h3>90000</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
